@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="animalApp">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>ProFauna</title>
+
+  <!-- JQuery  -->
+  <script src="js/jquery-2.2.4.min.js"></script>
+
+  <!-- Google Api -->
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP9ZvHI4pURQZnJFQWFf6DRVjxPJik_HU">
+  </script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#/" class="brand-logo">ProFauna: <small>Un proyecto para la protección de la fauna en carretera</small></a>
+        <ul class="right hide-on-med-and-down">
+          <li><!-- <a href="#">Navbar Link</a> --></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="/#">Navbar Link</a></li>
+        </ul>
+        <a href="/#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </header>
+
+  <div ng-view>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="page-footer teal">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col s6">
+          <h5 class="white-text"></h5>
+          <i class="grey-text text-lighten-4">"La grandeza de una nación y su progreso moral puede ser juzgado por la forma en que sus animales son tratados."</i> 
+          <p class="grey-text text-lighten-4 right-align light" id ="author">Gandhi</p>
+        </div>
+
+        <div class="col s6">
+          <h5 class="white-text"></h5>
+          <ul>
+            <li><a class="right-align light white-text" href="#/"><h5>Home</h5></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+      Realizado por <a class="brown-text text-lighten-3" href="https://es.linkedin.com/in/irene-guti%C3%A9rrez-carretero-46648376">Irene</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-route.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

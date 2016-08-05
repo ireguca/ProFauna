@@ -1,0 +1,130 @@
+<!-- Parallax  -->
+<script src="js/init.js"></script>
+
+
+<div id="index-banner" class="parallax-container" ng-controller="HomeViewController">
+
+    <div class="section no-pad-bot">
+
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2"></h1>
+        <br><br>
+      </div>
+
+    </div>
+
+    <div class="parallax"><img src="img/parallax2.jpg" alt="Unsplashed background img 1"></div>
+
+</div>
+
+<div class="container">
+  <div class="section">
+    <!--   Icon Section   -->
+    <div class="row">
+
+      <div class="col s12 m6">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">person</i></h2>
+          <h5 class="center">Login</h5>
+          <div class="row center">
+            <div class="container">
+              Usuario: <input class = "nameInput" id = "userLog" type="text" placeholder="Escribe aquí tu nombre de usuario" ng-model = "formData.userLog">
+              Contraseña: <input class = "passInput" id = "passLog" type="text" placeholder="Escribe aquí tu contraseña" ng-model = "formData.passLog">
+
+              <button class="btn-large waves-effect waves-light teal lighten-1" id = "loginButton" type = "button" ng-click = "checkUser()">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">addperson</i></h2>
+          <h5 class="center">¿Aun no estás registrado?</h5>            
+          <div class="row center">
+            <div class="container">
+              <button class="btn-large waves-effect waves-light teal lighten-1" id = "registerButton" type = "button" ng-click = "functionGoRegister()">Registrarte</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light"></h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="img/parallax1-1.jpg" alt="Unsplashed background img 2"></div>
+</div>
+
+<div class="container">
+  <div class="section">
+
+    <div class="row">
+      <div class="col s12 center">
+        <h3><i class="mdi-content-send brown-text"></i></h3>
+        <h4>Sobre este proyecto</h4>
+        <p class="left-align light">Más de 30 millones de animales mueren atropellados cada año en las carreteras españolas, según los datos de la Sociedad para la Conservación de los Vertebrados (SCV):</p>
+        <div class="grafica"><img src="img/grafica.png"></div>
+        <p class="left-align light">Con el objetivo de seguir registrando de la forma más real posible implicando en ello a la población, se crea el proyecto. De esta manera, toda persona preocupada por el problema puede ser partícipe en primera persona de la iniciativa contra el atropello de los animales.</p>
+        <p class="left-align light">Cualquier persona que viera un animal atropellado, previo registro, puede rellenar un formulario con datos de localización y fecha; y adjuntar una foto.
+        Se pueden ver las entradas de todos los usuarios reflejadas en un mapa con una marca en cada lugar de atropello registrado. Desde esta página se podría filtrar por zona y fecha.
+        Por último se podrían consultar los puntos negros reflejados en un mapa, es decir, las zonas con mayor concentración de atropellos.
+        Como complemento, el objetivo final sería la denuncia de este hecho y la aplicación, al menos para los puntos negros, de soluciones.</p>
+        <p class="left-align light">Posibles soluciones ya existentes en algunos lugares de las carreteras españolas:</p>
+
+        <div class="row">
+          <div class="col s3 center">
+            <h5>Prismas</h5> 
+            <p>Al llegar con un vehículo a la altura de un prisma, convenientemente colocado en un poste lateral, *incide la luz del faro en él, reflejándolo bosque adentro*, “iluminando” zonas ajenas a la carretera.</p>
+          </div>
+
+          <div class="col s3 center">
+            <h5>Vallas</h5> 
+            <p>Se colocan en los márgenes de la carretera y su forma se adapta a la especie que necesite protección.</p>
+          </div>
+
+          <div class="col s3 center">
+            <h5>Túneles</h5> 
+            <p>Normalmente se utiliza la infraestructura de viejas alcantarillas agrandándolas para adaptar su tamaño al de los animales.</p>
+          </div>
+
+          <div class="col s3 center">
+            <h5>Barreras de olor</h5> 
+            <p>Son bolas de poliespuma inyectadas periódicamente con una sustancia que desprende un olor mezcla de oso, lobo y hombre que asusta a los animales.</p>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col s12 center">
+            <p class="left-align light">Todas estas soluciones necesitarían de su correspondiente mantenimiento y deberían ir acompañadas de campañas de concienciación ciudadana.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light"></h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="img/parallax3-3.jpg" alt="Unsplashed background img 3"></div>
+</div>

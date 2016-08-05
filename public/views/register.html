@@ -1,0 +1,14 @@
+<div class="row center" ng-controller="RegisterViewController">
+
+	<h2>Registro de usuario</h2>
+
+	<div class="container">
+
+        Usuario: <input class = "nameInput" id = "username" type="text" placeholder="Escribe aquí un nombre de usuario" ng-model = "formData.username">
+        Contraseña: <input class = "passInput" type="text" id = "password" placeholder="Escribe aquí una contraseña" ng-model = "formData.password">
+
+        <button class="btn-large waves-effect waves-light teal lighten-1" id = "registerButton" type = "button" ng-click = "saveUser()">Guardar</button>
+
+    </div>
+
+</div>

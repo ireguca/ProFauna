@@ -1,0 +1,56 @@
+<div class="container center">
+    <h2>Registro de incidencias</h2>
+</div>
+
+<!-- Map and Side Panel -->
+<div class="row">
+    <!-- Google Map -->
+    <div class="col s7">
+        <div id="map"></div>
+    </div>        
+    <!-- Side Panel -->
+    <div class="col s5">
+        <div class="panel panel-default">
+            <!-- Panel Title -->
+            <div class="panel-heading">
+                <h2 class="panel-title text-center"><span class="glyphicon glyphicon-map-marker"></span></h2>
+            </div>
+            <!-- Panel Body -->
+            <div class="panel-body">
+                <!-- Form -->
+                <form name ="addForm" novalidate>
+                    <!-- Text Boxes and Other User Inputs -->
+                    <div class="form-group">
+                        <label><span class="badge">Todos los campos necesarios</span></label>
+                        <div class="form-group">
+                            <label for="user" >USUARIO</label>
+                            <h5 type="text" class="userClass" id="user" ng-model="formData.user"></h5>
+                        </div>
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label for="file">FOTO</label>
+                        <p><input type="file" class="form-control" id = "file" required></p>
+                    </div> -->
+                    
+                    <div class="form-group">
+                        <label for="date">FECHA</label>
+                        <input type="date" class="datepicker" ng-model = "formData.date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">LOCALIZACIÓN (Clica en mapa para localizar la posición del incidente manualmente o en botón para detectar tu posición actual)</label>
+                        <button class="btn btn-danger right" id = "currentPosButton" type = "button" ng-click="currentPos()"><i class="material-icons">location_on</i></button>
+                        <input type="text" class="form-control" id="idCurrentPos" ng-model="formData.inputCurrentPos" required>
+                    </div>
+
+                    <div class="container center">
+                        <button class="btn btn-danger formB" id = "formButton" type = "button" ng-click = "saveForm()">Guardar</button>
+
+                        <button class="btn btn-danger formB" id = "backMenuButton" type = "button" ng-click = "backMenuUser()">Volver al Menú</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
